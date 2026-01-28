@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            padding: 80px;
+            font-family: 'Poppins', sans-serif;
+            color: #312823;
+        }
+
+        section {
+            margin-bottom: 120px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 18px;
+            padding: 60px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero img {
+            width: 260px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #d84040;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #d84040;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 14px 36px;
+            border-radius: 30px;
+            border: none;
+            background-color: #d84040;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(216,64,64,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="card hero">
+        <img src="/images/subject.jpg" alt="Profile Picture">
+        <div>
+            <h1>Ron Elmo Kristofer Cabangon</h1>
+            <p>Computer Engineering Student</p>
+            <button onclick="window.parent.location.href='contacts.html'">REACH OUT</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Credentials</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li><strong>Angelicum Academy</strong> – Best in English, Science, Math; Most Patient Award</li>
+            <li><strong>Trinitas College</strong> – Highest Honors, Leadership Award, DSPC Champion, Student-Athlete, Full Scholar</li>
+            <li><strong>DLSU</strong> – BS Computer Engineering, 3rd Year</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>ACCESS – Assistant Vice President for HR</li>
+            <li>Former USG Officer – Student Services</li>
+            <li>Active university volunteer</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ron_cabangon@dlsu.edu.ph">ron_cabangon@dlsu.edu.ph</a></p>
+        <p>Phone: 09209522005</p>
+    </div>
+</section>
+
+</body>
+</html>
