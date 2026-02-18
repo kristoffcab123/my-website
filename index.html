@@ -2,89 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #f2f2f2;
-            color: #312823;
-        }
-
-        header, footer {
-            position: fixed;
-            width: 100%;
-            background-color: #d84040;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-
-        header {
-            top: 0;
-            height: 70px;
-        }
-
-        footer {
-            bottom: 0;
-            height: 50px;
-            font-size: 14px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 22px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-
-        nav a:hover {
-            opacity: 0.8;
-        }
-
-        .content {
-            margin-top: 70px;
-            margin-bottom: 50px;
-            height: calc(100vh - 120px);
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron Elmo Kristofer Cabangon - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html" data-page="home">Home</a>
+            <a href="about.html" data-page="about">About</a>
+            <a href="credentials.html" data-page="credentials">Credentials</a>
+            <a href="resume.html" data-page="resume">Resume</a>
+            <a href="contact.html" data-page="contact">Contact</a>
+        </nav>
+        <div id="datetime">
+            <span id="greeting"></span>
+            <span id="clock"></span>
+        </div>
+    </header>
 
-<header>
-    <nav>
-        <a href="home.html" target="mainFrame">Home</a>
-        <a href="about.html" target="mainFrame">About</a>
-        <a href="credentials.html" target="mainFrame">Credentials</a>
-        <a href="contacts.html" target="mainFrame">Contact</a>
-        <a href="resume.html" target="mainFrame">Resume</a>
-    </nav>
-</header>
+    <main id="main-content">
+        <section id="home" class="page active">
+            <div class="card hero">
+                <img src="subject.jpg" alt="Profile Picture">
+                <div>
+                    <h1>Ron Elmo Kristofer Cabangon</h1>
+                    <p>Computer Engineering Student</p>
+                    <button class="cta-btn" onclick="window.location.href='contact.html'">REACH OUT</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Quick Overview</h2>
+                <div class="grid">
+                    <div class="overview-item">
+                        <h3>Education</h3>
+                        <ul>
+                            <li><strong>Angelicum Academy</strong> – Best in English, Science, Math</li>
+                            <li><strong>Trinitas College</strong> – Highest Honors, Full Scholar</li>
+                            <li><strong>DLSU</strong> – BS Computer Engineering, 3rd Year</li>
+                        </ul>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Leadership</h3>
+                        <ul>
+                            <li>ACCESS – Assistant Vice President for HR</li>
+                            <li>Former USG Officer – Student Services</li>
+                            <li>Active university volunteer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div class="content">
-    <iframe name="mainFrame" src="home.html"></iframe>
-</div>
-
-<footer>
-    © 2026 Ron Elmo Kristofer Cabangon
-</footer>
-
+    <footer>© 2026 Ron Elmo Kristofer Cabangon</footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
